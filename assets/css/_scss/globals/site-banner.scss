@@ -1,0 +1,10 @@
+.site-banner {
+    text-align: center;
+    font-size: rem(14px);
+    background-color: darkgreen;
+    color: #fff;
+}
+
+.site-banner > * {
+    margin: space(.25) 0;
+}

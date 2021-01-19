@@ -1,0 +1,32 @@
+#Identity
+site_title: K Essencials
+site_tagline:
+site_description: Remind me to fill this up.
+
+# Setup
+date_format: "%b %-d, %Y"
+disable_disk_cache: true
+markdown: kramdown
+
+# Setup
+date_format: "%b %-d, %Y"
+disable_disk_cache: true
+markdown: kramdown
+
+# Customization
+defaults:
+  - scope:
+      path: "_pages"
+    values:
+      type: "pages"
+
+sass:
+    sass_dir: assets/css/_scss
+    
+# Collections
+collections:
+  products:
+    output: true
+  pages:
+    output: true
+    permalink: /:path/    

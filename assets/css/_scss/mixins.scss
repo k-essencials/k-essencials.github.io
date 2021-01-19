@@ -1,0 +1,18 @@
+// px to em
+@function em($pixelSize) {
+    $emSize: $pixelSize / $standard-unit * 1em;
+    @return #{$emSize};
+}
+
+// px to rem
+@function rem($pixelSize) {
+    $remSize: $pixelSize / $standard-unit * 1rem;
+    @return #{$remSize};
+}
+
+// vertical spacing calc
+@function space($spaceUnit) {
+    $spaceCalc: $spaceUnit * $spacing-base;
+    $remResult: $spaceCalc / $standard-unit * 1rem;
+    @return #{$remResult};
+}

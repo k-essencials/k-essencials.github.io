@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title> 
+        {%- if page.title == "Home" -%}
+            {{ site.site_title }}
+        {%- else -%}
+            {{ page.title }} | {{ site.site_title }}
+        {%- endif -%}            
+        </title>
+        <meta name="description" content="{{ site.site_description }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+                
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+        
+        <link rel="stylesheet"  href="{{ "/assets/css/vendor/splide-core.min.css" | relative_url }}">
+        <link rel="stylesheet"  href="{{ "/assets/css/vendor/splide.min.css" | relative_url }}">
+        
+        <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+
+        <meta name="theme-color" content="#fafafa">
+    </head>
+    <body>
+        {{ content }}
+    </body>
+</html>

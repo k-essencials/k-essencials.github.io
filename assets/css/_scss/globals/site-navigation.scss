@@ -1,0 +1,40 @@
+.site-navigation {
+    padding: space(.75) 0;
+    margin-bottom: space(2);
+    border-bottom: 1px solid #eee;
+}
+
+.odin-navigation {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.odin-logo {
+    font-size: rem(20px);
+    font-weight: 500;
+}
+
+.odin-links{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.odin-link {
+    margin-right: space(1);
+    font-size: rem(14px);
+}
+
+.odin-link:last-child {
+    margin-right: 0;
+}
+
+.odin-aside {
+    display: flex;
+    flex-flow: row nowrap;    
+}
+
+.odin-svg {
+    vertical-align: middle;
+}
