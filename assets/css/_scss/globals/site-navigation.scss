@@ -1,10 +1,23 @@
 .site-navigation {
-    padding: space(.75) 0;
-    margin-bottom: space(2);
+    display: flex;
+    flex-flow: row nowrap;
     border-bottom: 1px solid #eee;
+    margin-bottom: space(2);      
+}
+
+.main-navigation {
+    flex: 1;
+    padding: space(.75) 0;  
 }
 
 .odin-navigation {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.odin-main {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -17,8 +30,15 @@
 }
 
 .odin-links{
-    display: flex;
-    flex-flow: row nowrap;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .odin-links{
+        margin-left: space(1);
+        display: flex;
+        flex-flow: row nowrap;
+    }
 }
 
 .odin-link {
@@ -37,4 +57,28 @@
 
 .odin-svg {
     vertical-align: middle;
+}
+
+.thor-offcanvas {
+    border: 0;
+    padding: 0 rem(18px);
+    border-right: 1px solid #eee;
+    background-color: #fff;
+}
+
+@media (min-width: 768px) {
+    .thor-offcanvas {
+        display: none;
+    }
+}
+
+.thor-bar {
+    height: 3px;
+    width: 24px;
+    margin-bottom: 4px;
+    background-color: #212121;
+}
+
+.thor-bar:last-child {
+    margin: 0;
 }
