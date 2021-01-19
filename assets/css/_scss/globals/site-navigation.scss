@@ -30,7 +30,8 @@
 }
 
 .odin-links{
-    display: none;
+    display: none !important;
+    visibility: hidden;
 }
 
 @media (min-width: 768px) {
@@ -60,6 +61,7 @@
 }
 
 .thor-offcanvas {
+    display: block;
     border: 0;
     padding: 0 rem(18px);
     border-right: 1px solid #eee;
@@ -68,7 +70,8 @@
 
 @media (min-width: 768px) {
     .thor-offcanvas {
-        display: none;
+        display: none !important; 
+        visibility: hidden;
     }
 }
 
