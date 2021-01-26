@@ -1,5 +1,5 @@
 .site-footer {
-    padding: space(1.5) 0;
+    padding: space(.5) 0;
     border-top: 1px solid #eee;
     font-size: rem(12px);
     line-height: space(1);
@@ -18,7 +18,7 @@
 
 @media (min-width: 768px) {
     .underking-upper {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-column-gap: space(1);
         grid-row-gap: 0;
     }    
@@ -42,7 +42,8 @@
 }
 
 .underking-copyright {
-    font-weight: 500;
+    font-size: rem(14px);
+    font-weight: 400;
 }
 
 .underking-link {
