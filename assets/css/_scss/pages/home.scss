@@ -1,3 +1,84 @@
+.text-limiter {
+    margin: 0 auto;
+    max-width: 576px;
+}
+
+
+.hero-banner {
+    position: relative;
+    background-color: #fcf4eb;
+}
+
+.hero {
+    margin: space(1) 0;
+}
+
+.hero-banner .splide img {
+    vertical-align: middle;
+}
+
+.surface-content {
+    background-color: #fcf4eb;
+}
+
 .home-products {
+    margin: space(1) 0;
+    padding: space(1) space(.5);
+    background-color: #fff;
+}
+
+.home-products p {
+    font-family: $font-secondary;
+    line-height: space(1);
+}
+
+.products-header {
+    margin-bottom: space(1);
+    padding-bottom: space(.5);
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+.products-heading {
+    margin: 0;
+    font-size: rem(26px);
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    justify-content: space-around;
+    grid-row-gap: space(1);
+    margin-bottom: space(2);
+}
+
+@media (min-width: 768px) {
+    .products-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: space(1);
+    }  
+}
+
+.products-grid-heading {
+    font-size: rem(18px);
+    font-weight: 500;
+}
+
+.product {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+.product-title {
+    font-size: rem(14px);
+    font-weight: 400;
+    text-align: center;
+}
+
+.product-price {
+    font-size: rem(14px);
+    font-weight: 500;
     text-align: center;
 }
